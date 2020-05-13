@@ -5,6 +5,10 @@
 Bounty for security report disclosure, from 2 independant researchers.  
 **Fixed in Nyzo version 572** https://tech.nyzo.co/releaseNotes/v572
 
+## Status:
+
+PENDING
+
 ## Context
 
 > The NicknameManager issue, addressed in version 500, resulted in a ∩75,000 bounty.  
@@ -27,7 +31,7 @@ You can also use the related issue on this repo for more discussion.
 - Every vote is a pair, since it's split to two different persons.  
 - You have to vote the same for both transactions in a group
 - You are encouraged to vote YES for one group, NO for the others
-- You can change your votes until one pass.
+- You can change your votes until one passes.
 
 ### Group A: 2x 47,545.75
 
