@@ -60,7 +60,7 @@ https://nyzo.today/votes/c1b7aa5ebf84f4f333f9a15dbcee3520081232fa15fc49877375d73
 
 To be paid to Nyzo 2.
 
-How to vote from your sentinel, once in your nyzoVerifier directory,  
+How to vote from your sentinel, once in your nyzoVerifier directory:  
 **YES** Vote:
 ```
 java -jar build/libs/nyzoVerifier-1.0.jar co.nyzo.verifier.scripts.CycleTransactionSignScript sig_gc6VHCY_yfjRc_DyosRLdi084AbY5wP9yVdTTRhajp4JUk7nbRw9c-aufwEwGY~.x0m55u.v.tGzjnA7VYP4V0m-eXyG 1
@@ -80,6 +80,6 @@ Paid to Nyzo 0.
 
 ### NCFP-3(Part2)
 `sig_gbc2jqXHQd0WukMyU~RFpv_3WM.TpdWo4WfIihSPE0swbdugvutTb~PFetPykhI2ALLT1yw.zDf.mH4DioUwvN-5vZvY`  
-https://nyzo.today/votes/b3024d9e6ac8d038754be1dbece861efc3e2ff7560de171383eb491d319c06df2cd75079d7352fec6839cc61511ac28eebb50617fd8a63fd56a126497d9f7b0f
+https://nyzo.today/votes/b3024d9e6ac8d038754be1dbece861efc3e2ff7560de171383eb491d319c06df2cd75079d7352fec6839cc61511ac28eebb50617fd8a63fd56a126497d9f7b0f  
 Paid to Nyzo 1.
 
