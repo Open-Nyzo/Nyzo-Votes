@@ -52,18 +52,6 @@ Nyzo 9: id__89aCy9_LLZby~UiUUjC0LKdyrf-djXyf6EKBV6_KNdICIpCfGqK3
 This page will list past validated transactions as well as the current one.  
 Once one goes through, the next one will be issued.
 
-### Validated transactions
-
-### NCFP-3(Part1)
-`sig_g188HX1Vm.dF_vVmNpM7Kr97BKaMWmbyYc69rkvc6AtVI-UM05s01N4ff3I4RBVVWcYLfA~Qm3bUNEqwHPVjSgI6kNXs`  
-https://nyzo.today/votes/1208ab907757d368fdedd5c18bc7b5a24792d2afe152e1e8c18969478c1a3737afcdaf0056c007010f3c3ac4ce4df7e0ceae3e3fb25432f6c2765fab1dd3d10a  
-Paid to Nyzo 0.
-
-### NCFP-3(Part2)
-`sig_gbc2jqXHQd0WukMyU~RFpv_3WM.TpdWo4WfIihSPE0swbdugvutTb~PFetPykhI2ALLT1yw.zDf.mH4DioUwvN-5vZvY`  
-https://nyzo.today/votes/b3024d9e6ac8d038754be1dbece861efc3e2ff7560de171383eb491d319c06df2cd75079d7352fec6839cc61511ac28eebb50617fd8a63fd56a126497d9f7b0f
-Paid to Nyzo 1.
-
 
 ### Current Cycle transaction: NCFP-3(Part3)
 
@@ -82,3 +70,16 @@ java -jar build/libs/nyzoVerifier-1.0.jar co.nyzo.verifier.scripts.CycleTransact
 ```
 java -jar build/libs/nyzoVerifier-1.0.jar co.nyzo.verifier.scripts.CycleTransactionSignScript sig_gc6VHCY_yfjRc_DyosRLdi084AbY5wP9yVdTTRhajp4JUk7nbRw9c-aufwEwGY~.x0m55u.v.tGzjnA7VYP4V0m-eXyG 0
 ```
+
+### Past Validated transactions
+
+### NCFP-3(Part1)
+`sig_g188HX1Vm.dF_vVmNpM7Kr97BKaMWmbyYc69rkvc6AtVI-UM05s01N4ff3I4RBVVWcYLfA~Qm3bUNEqwHPVjSgI6kNXs`  
+https://nyzo.today/votes/1208ab907757d368fdedd5c18bc7b5a24792d2afe152e1e8c18969478c1a3737afcdaf0056c007010f3c3ac4ce4df7e0ceae3e3fb25432f6c2765fab1dd3d10a  
+Paid to Nyzo 0.
+
+### NCFP-3(Part2)
+`sig_gbc2jqXHQd0WukMyU~RFpv_3WM.TpdWo4WfIihSPE0swbdugvutTb~PFetPykhI2ALLT1yw.zDf.mH4DioUwvN-5vZvY`  
+https://nyzo.today/votes/b3024d9e6ac8d038754be1dbece861efc3e2ff7560de171383eb491d319c06df2cd75079d7352fec6839cc61511ac28eebb50617fd8a63fd56a126497d9f7b0f
+Paid to Nyzo 1.
+
