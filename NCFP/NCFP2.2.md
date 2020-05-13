@@ -24,7 +24,7 @@ From Nyzo release:
 - Explorer with all cycles txs and live votes details https://nyzo.today/votes/
 - Reference on community forum: https://forum.nyzo.community/t/ncfp-2-ongoing-development-incentives-3rd-party/131/59
 
-You can also use the related issue on this repo for more discussion. 
+You can also use the related issue on this repo for more discussion: https://github.com/Open-Nyzo/Nyzo-Votes/issues/1
 
 ## Cycle Tx and votes
 
