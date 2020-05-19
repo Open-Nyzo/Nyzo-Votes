@@ -66,14 +66,18 @@ To be paid to Nyzo 0 - 9.
 How to vote from your sentinel, once in your nyzoVerifier directory:  
 (Temp draft)
 
+- cd to your nyzoVerifier directory. **This depends on your install**  
+*for instance*, `cd /home/ubuntu/nyzoVerifier` or `cd /root/nyzoVerifier`
 - get the helper script  
-`wget cycle_vote_sentinel.sh`
+`wget https://github.com/Open-Nyzo/Nyzo-Votes/raw/master/cycle_vote_sentinel.sh`
 - set it executable  
 `chmod +x cycle_vote_sentinel.sh`
-- get the sig list  
-`wget ncfp3-sigs.txt`
+- get the remaining ncfp3 sig list  
+`wget https://raw.githubusercontent.com/Open-Nyzo/Nyzo-Votes/master/NCFP/ncfp3-sigs.txt`
 - vote yes (=1)for all transactions in one go:  
 `./cycle_vote_sentinel.sh ncfp3-sigs.txt 1`
+
+An alternate voting method using NyzoCli will also be provided.
 
 Individual vote still is possible  
 **YES** Vote:
