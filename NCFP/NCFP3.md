@@ -77,7 +77,7 @@ How to vote from your sentinel, once in your nyzoVerifier directory:
 - vote yes (=1)for all transactions in one go:  
 `./cycle_vote_sentinel.sh ncfp3-sigs.txt 1`
 
-An alternate voting method using NyzoCli will also be provided.
+An alternate voting method using NyzoCli is also available, see https://github.com/EggPool/NyzoCli#massvotepy
 
 Individual vote still is possible  
 **YES** Vote:
