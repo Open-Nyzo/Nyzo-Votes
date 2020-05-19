@@ -9,5 +9,5 @@
 # Thanks to Discord user @wxc
 
 for transaction in $(cat $1); do
-    java -jar build/libs/nyzoVerifier-1.0.jar co.nyzo.verifier.scripts.CycleTransactionSignScript transaction $2
+    java -jar build/libs/nyzoVerifier-1.0.jar co.nyzo.verifier.scripts.CycleTransactionSignScript $transaction $2
 done
