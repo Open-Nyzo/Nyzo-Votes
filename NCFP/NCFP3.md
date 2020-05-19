@@ -26,6 +26,7 @@ Since these will be paid to special accounts, **this amount will not become avai
 - Official website with current cycle txs https://nyzo.co/cycleTransactions
 - Explorer with all cycles txs and live votes details https://nyzo.today/votes/
 - Reference on community forum: https://forum.nyzo.community/t/ncfp-3-development-incentives-for-the-nyzo-core-team-past-present-and-future/153
+- Locked accounts list, hardcoded: https://github.com/n-y-z-o/nyzoVerifier/blob/da9f8ae84af806a9f69758e1244829dd2ec62c9c/src/main/java/co/nyzo/verifier/LockedAccountManager.java#L14
 
 You can also use the related issue on this repo for more discussion: https://github.com/Open-Nyzo/Nyzo-Votes/issues/2
 
@@ -43,32 +44,46 @@ Nyzo 2: id__84Vv_vrxPrMVz6AQNjx3~jj4nx.EoUE.ugTCv0hD5~Z5p5hM3PFu
 Nyzo 3: id__81hqZKeFSZMPSwHMmj-8p3dD5u4e3IT4KwzTQkgphoG3ZTTQRQpV
 Nyzo 4: id__86ydzPM~UNLR6qmbF~cNU2mVZo_YhwVSrc_x6JQJsszua_S7524c
 Nyzo 5: id__8eBoMRRVvQQe40FV5m03CYMbzwDqpY5SWjPsjy7bKQyi07~ubwHD
-Nyzo 6: id__8fx–L3AH-ow0sVuq_YKc9D_.~~MhE0g.jKCjQBYDGz72811JoPW
+Nyzo 6: id__8fx–-L3AH-ow0sVuq_YKc9D_.~~MhE0g.jKCjQBYDGz72811JoPW
 Nyzo 7: id__83pY4aq.~JDzI5Etvy_gfAt5qC-1mxSXE7zAq.NyRGjeRKZ72xT5
 Nyzo 8: id__8dWMSD5CWsuSRFUCdC10_62~ya8nwyTzX_y7K0_H1ppYBEsF1teA
 Nyzo 9: id__89aCy9_LLZby~UiUUjC0LKdyrf-djXyf6EKBV6_KNdICIpCfGqK3
 ```
 
-This page will list past validated transactions as well as the current one.  
-Once one goes through, the next one will be issued.
+This page will list past validated transactions as well as the current ones.
 
+All the required ncfp-3 cycle transactions have now been emitted thanks to several concerned users.  
+They can be signed in batch to ease up the process and be done with it.
 
-### Current Cycle transaction: NCFP-3(Part3)
+### Current Cycle transaction: NCFP-3(Part4) to NCFP-3(Part77)
 
-`sig_gc6VHCY_yfjRc_DyosRLdi084AbY5wP9yVdTTRhajp4JUk7nbRw9c-aufwEwGY~.x0m55u.v.tGzjnA7VYP4V0m-eXyG`  
-https://nyzo.today/votes/c1b7aa5ebf84f4f333f9a15dbcee3520081232fa15fc49877375d7344a4d812cd941d62f37c933c29d3df9dfa7afbd80054515df5ef5ca624d68c7dfac44dc05
+Visible at https://nyzo.today/votes/
 
-To be paid to Nyzo 2.
+Full list of the sigs only, one by line: [ncfp3-sigs.txt](ncfp3-sigs.txt)
+
+To be paid to Nyzo 0 - 9.
 
 How to vote from your sentinel, once in your nyzoVerifier directory:  
+(Temp draft)
+
+- get the helper script  
+`wget cycle_vote_sentinel.sh`
+- set it executable  
+`chmod +x cycle_vote_sentinel.sh`
+- get the sig list  
+`wget ncfp3-sigs.txt`
+- vote yes (=1)for all transactions in one go:  
+`./cycle_vote_sentinel.sh ncfp3-sigs.txt 1`
+
+Individual vote still is possible  
 **YES** Vote:
 ```
-java -jar build/libs/nyzoVerifier-1.0.jar co.nyzo.verifier.scripts.CycleTransactionSignScript sig_gc6VHCY_yfjRc_DyosRLdi084AbY5wP9yVdTTRhajp4JUk7nbRw9c-aufwEwGY~.x0m55u.v.tGzjnA7VYP4V0m-eXyG 1
+java -jar build/libs/nyzoVerifier-1.0.jar co.nyzo.verifier.scripts.CycleTransactionSignScript sig_of_a_given_transaction 1
 ```
 
 **NO** Vote:
 ```
-java -jar build/libs/nyzoVerifier-1.0.jar co.nyzo.verifier.scripts.CycleTransactionSignScript sig_gc6VHCY_yfjRc_DyosRLdi084AbY5wP9yVdTTRhajp4JUk7nbRw9c-aufwEwGY~.x0m55u.v.tGzjnA7VYP4V0m-eXyG 0
+java -jar build/libs/nyzoVerifier-1.0.jar co.nyzo.verifier.scripts.CycleTransactionSignScript sig_of_a_given_transaction 0
 ```
 
 ### Past Validated transactions
@@ -82,4 +97,9 @@ Paid to Nyzo 0.
 `sig_gbc2jqXHQd0WukMyU~RFpv_3WM.TpdWo4WfIihSPE0swbdugvutTb~PFetPykhI2ALLT1yw.zDf.mH4DioUwvN-5vZvY`  
 https://nyzo.today/votes/b3024d9e6ac8d038754be1dbece861efc3e2ff7560de171383eb491d319c06df2cd75079d7352fec6839cc61511ac28eebb50617fd8a63fd56a126497d9f7b0f  
 Paid to Nyzo 1.
+
+### NCFP-3(Part3)
+`sig_gc6VHCY_yfjRc_DyosRLdi084AbY5wP9yVdTTRhajp4JUk7nbRw9c-aufwEwGY~.x0m55u.v.tGzjnA7VYP4V0m-eXyG`  
+https://nyzo.today/votes/c1b7aa5ebf84f4f333f9a15dbcee3520081232fa15fc49877375d7344a4d812cd941d62f37c933c29d3df9dfa7afbd80054515df5ef5ca624d68c7dfac44dc05  
+Paid to Nyzo 2.
 
