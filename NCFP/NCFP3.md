@@ -6,7 +6,7 @@ Development incentive for anonymous core dev team.
 
 ## Status:
 
-PENDING, 3/n
+PENDING, 3/77
 
 ## Context
 
