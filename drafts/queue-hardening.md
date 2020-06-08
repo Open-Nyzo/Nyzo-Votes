@@ -60,3 +60,32 @@ This would also complicate things for large scale container operations, free vps
 ### Mitigation proposal 2: 
 
 (WIP)
+
+### Mitigation proposal 3: 
+
+> This one is more radical, although very easy to enforce and with no cost.   
+> I'm not sure on my stance on it because of some cons. Unsure of benefit/risk ratio, to be dug. Listing for completeness.
+
+Aggregate queue nodes by class C, allow only one candidate per class C.
+
+- No impact on cycle itself, or current diversity of the cycle
+- we only look at the queue, like we do now
+- we keep track of every ip timestamps, like we do now.
+- small change: when drawing a candidate for join, we filter the queue list and only keep one single ip (lowest or highest, or oldest one(beware scattering then)) per class C network.
+
+Currently: a class C network has 256 tickets in lottery  
+With that proposal: a class C network has 1 ticket only in lottery at a given time.
+
+Pros:
+- would immediatly void the edge of running verifiers on class c networks.
+- would give more edge to individual users
+- would enforce litteral ip diversity in the eligible queue
+- Can be used in conjunction with proposals 1 and/or 2
+
+Cons:
+- Could penalize real individual queue verifiers as well.  
+Say 10 different individual on contabo or vultr or any ISP share the same class C ips, although they are 10, they will only have 1 ticket (but once that ip is in, seat is free for the next one)
+- Does not differentiate working/ non working verifiers, only enforces litteral in-queue ip diversity.
+
+The current queue ips can be audited to see how that proposal would likely impact both sides.  
+Maybe we would then have a clearer evaluation of potential benefit/risk.
