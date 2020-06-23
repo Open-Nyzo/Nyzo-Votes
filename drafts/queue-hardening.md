@@ -89,3 +89,9 @@ Say 10 different individual on contabo or vultr or any ISP share the same class 
 
 The current queue ips can be audited to see how that proposal would likely impact both sides.  
 Maybe we would then have a clearer evaluation of potential benefit/risk.
+
+Fancy rule option:  
+Atm lottery is chain hash vs id distance.  
+We could imagine hash parity or alike to say if we consider first or last candidate from every c class, or  %16 etc (modulo)  
+so it's not always the same one being first for a c class, still only one candidate per class, same simple rule cycle wide.  
+More fair, but slightly more complex.
