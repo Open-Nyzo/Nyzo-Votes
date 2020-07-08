@@ -18,10 +18,14 @@ C also opens the door to extra attacks that were not fully documented yet.
 
 Although this optimization sticks to the current Nyzo rules and seems inevitable, it is a community choice to try and reduce the gap between regular users and "ip whales", so every one has a "fair" chance to join, and end up with a more diversified Nyzo cycle.
 
+> For instance, One Ukrainian ISP is currently using all 6144 of its IPs to send nodejoins. That's 26.8% of the queue, one single entity.
+> OVH blocks account for 44% of the queue, all following a similar pattern and likely owned by one or a very few entities.
+> See https://github.com/Open-Nyzo/Nyzo-Q/blob/master/cache/owners.csv
+
 ## Goal of this draft
 
 The following proposals are not intented as a magical "fix it all" solution.  
-They will make it harder for current "ip whales" to operate with the marge edge they currently have, but can't stop them entirely.  
+They will make it harder for current "ip whales" to operate with the marginal edge they currently have, but can't stop them entirely.  
 I feel this will always be a cat and mouse balance, where too strict rules would be additionnal attack vectors.
 
 ## Self imposed constraints
@@ -57,11 +61,23 @@ This would immediatly render ineffective
 
 This would also complicate things for large scale container operations, free vps/amazon credits aso.
 
+Legit users on cheap VPS may still be able to upgrade their service to a higher offer, provided they can keep the same IP.
+
+This proposal is marginal and not needed if the fix for "mostly red" verifiers is applied.
+
 ### Mitigation proposal 2: 
 
-(WIP)
+This was supposed to be a somehow complex proposal to evaluate queue verifiers working and avoid "red" verifiers to be eligible.
+
+In light of recent research, this may not be needed anymore since a simpler fix to current code may exist.  
+Since I'm not able to fully evaluate the possible side effects of the - very small - needed change, This will be bring to the devs attention.
 
 ### Mitigation proposal 3: 
+
+The proposal below is left for historical reasons.
+It has been developped more deeply and can now be found with practical data at https://github.com/Open-Nyzo/Nyzo-Q
+
+----------------------------------------------
 
 > This one is more radical, although very easy to enforce and with no cost.   
 > I'm not sure on my stance on it because of some cons. Unsure of benefit/risk ratio, to be dug. Listing for completeness.
