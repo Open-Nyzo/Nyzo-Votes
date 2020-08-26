@@ -6,7 +6,7 @@ Development incentive for anonymous core dev team.
 
 ## Status:
 
-PENDING, 3/77
+PENDING, 23/77
 
 ## Context
 
@@ -55,11 +55,12 @@ This page will list past validated transactions as well as the current ones.
 All the required ncfp-3 cycle transactions have now been emitted thanks to several concerned users.  
 They can be signed in batch to ease up the process and be done with it.
 
-### Current Cycle transaction: NCFP-3(Part4) to NCFP-3(Part77)
+### Current Cycle transaction: NCFP-3(Part 24) to NCFP-3(Part44)  
+Part 28 is missing and will be added in a future batch.
 
 Visible at https://nyzo.today/votes/
 
-Full list of the sigs only, one by line: [ncfp3-sigs.txt](ncfp3-sigs.txt)
+Current batch list of the sigs only, one by line: [ncfp3-sigs.txt](ncfp3-sigs.txt)
 
 To be paid to Nyzo 0 - 9.
 
@@ -72,7 +73,7 @@ How to vote from your sentinel, once in your nyzoVerifier directory:
 `wget https://github.com/Open-Nyzo/Nyzo-Votes/raw/master/cycle_vote_sentinel.sh`
 - set it executable  
 `chmod +x cycle_vote_sentinel.sh`
-- get the remaining ncfp3 sig list  
+- get the current batch ncfp3 sig list  
 `wget https://raw.githubusercontent.com/Open-Nyzo/Nyzo-Votes/master/NCFP/ncfp3-sigs.txt`
 - vote yes (=1)for all transactions in one go:  
 `./cycle_vote_sentinel.sh ncfp3-sigs.txt 1`
@@ -107,3 +108,5 @@ Paid to Nyzo 1.
 https://nyzo.today/votes/c1b7aa5ebf84f4f333f9a15dbcee3520081232fa15fc49877375d7344a4d812cd941d62f37c933c29d3df9dfa7afbd80054515df5ef5ca624d68c7dfac44dc05  
 Paid to Nyzo 2.
 
+### NCFP-3(Part 4 to part 23)  
+Visible on https://nyzo.today/votes/
